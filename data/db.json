@@ -1,0 +1,215 @@
+{
+  "users": [
+    {
+      "email": "rpalmacordova@deloitte.com",
+      "password": "30OokRs",
+      "id": "96a0"
+    }
+  ],
+  "authors": [
+    {
+      "id": "960c",
+      "fullname": "Robim Sharma",
+      "country": "Canada"
+    },
+    {
+      "id": "b0a8",
+      "fullname": "Julio Berne",
+      "country": "Italia"
+    },
+    {
+      "id": "597a",
+      "fullname": "Dale Carnegie",
+      "country": "Estados Unidos"
+    },
+    {
+      "id": "29ad",
+      "fullname": "John Katzenbach",
+      "country": "Estados Unidos"
+    },
+    {
+      "id": "d363",
+      "fullname": "Gabriel Garcia Marquez",
+      "country": "Colombia"
+    },
+    {
+      "id": "d62a",
+      "fullname": "Jual Rulfo",
+      "country": "Mexico"
+    },
+    {
+      "fullname": "Project Management Institute",
+      "country": "United States",
+      "id": "5b47"
+    }
+  ],
+  "genres": [
+    {
+      "name": "Drama",
+      "description": "Drama en general",
+      "id": "a4dd"
+    },
+    {
+      "name": "Ciencia Ficción",
+      "description": "Plantea escenarios ficticion e imaginarios",
+      "id": "934d"
+    },
+    {
+      "id": "b184",
+      "name": "Terror",
+      "description": "Miedo, suspenso, sangre"
+    },
+    {
+      "name": "Superacion personal",
+      "description": "Anecdotas, experiencias, psicologia",
+      "id": "7b89"
+    },
+    {
+      "name": "Misterio",
+      "description": "Escenarios de investigacion y misterio en general",
+      "id": "8d0a"
+    },
+    {
+      "id": "5d5d",
+      "name": "Comedia",
+      "description": "Escenarios divertidos y de broma"
+    }
+  ],
+  "books": [
+    {
+      "name": "El monje que vendio su ferrari",
+      "author": {
+        "id": "960c",
+        "fullname": "Robim Sharma",
+        "country": "Canada"
+      },
+      "genre": {
+        "id": "7b89",
+        "name": "Superacion personal",
+        "description": ""
+      },
+      "year": "2011",
+      "id": "adb7"
+    },
+    {
+      "name": "La vuelta al mundo en 80 dias",
+      "author": {
+        "id": "b0a8",
+        "fullname": "Julio Berne",
+        "country": "Italia"
+      },
+      "genre": {
+        "name": "Ciencia Ficción",
+        "description": "Plantea escenarios ficticion e imaginarios",
+        "id": "934d"
+      },
+      "year": "1850",
+      "id": "0025"
+    },
+    {
+      "id": "88f6",
+      "name": "Como hacer amigos e influir sobre las personas",
+      "author": {
+        "id": "597a",
+        "fullname": "Dale Carnegie",
+        "country": "Estados Unidos"
+      },
+      "genre": {
+        "id": "7b89",
+        "name": "Superacion personal",
+        "description": ""
+      },
+      "year": ""
+    },
+    {
+      "name": "La historia del loco",
+      "author": {
+        "id": "29ad",
+        "fullname": "John Katzenbach",
+        "country": "Estados Unidos"
+      },
+      "genre": {
+        "name": "Ciencia Ficción",
+        "description": "Plantea escenarios ficticion e imaginarios",
+        "id": "934d"
+      },
+      "year": "2006",
+      "id": "be0a"
+    },
+    {
+      "id": "d430",
+      "name": "Cien años de soledad",
+      "author": {
+        "id": "d363",
+        "fullname": "Gabriel Garcia Marquez",
+        "country": "Colombia"
+      },
+      "genre": {
+        "id": "a4dd",
+        "name": "Drama",
+        "description": ""
+      },
+      "year": ""
+    },
+    {
+      "name": "La hojarazca",
+      "author": {
+        "id": "d363",
+        "fullname": "Gabriel Garcia Marquez",
+        "country": "Colombia"
+      },
+      "genre": {
+        "name": "Drama",
+        "description": "Drama en general",
+        "id": "a4dd"
+      },
+      "year": "",
+      "id": "be1f"
+    },
+    {
+      "id": "40e4",
+      "name": "Juventud en extasis",
+      "author": {
+        "id": "d363",
+        "fullname": "Gabriel Garcia Marquez",
+        "country": "Colombia"
+      },
+      "genre": {
+        "id": "a4dd",
+        "name": "Drama",
+        "description": ""
+      },
+      "year": ""
+    },
+    {
+      "name": "La isla misteriosa",
+      "author": {
+        "id": "b0a8",
+        "fullname": "Julio Berne",
+        "country": "Italia"
+      },
+      "genre": {
+        "name": "Misterio",
+        "description": "Escenarios de investigacion y misterio en general",
+        "id": "8d0a"
+      },
+      "year": "1800",
+      "id": "2b77"
+    },
+    {
+      "id": "b1ab",
+      "name": "Pedro Paramo",
+      "author": {
+        "id": "d62a",
+        "fullname": "Jual Rulfo",
+        "country": "Mexico"
+      },
+      "genre": {
+        "name": "Ciencia Ficción",
+        "description": "Plantea escenarios ficticion e imaginarios",
+        "id": "934d"
+      },
+      "year": "1955"
+    }
+  ]
+}
