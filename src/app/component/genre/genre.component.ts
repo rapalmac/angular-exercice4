@@ -34,7 +34,6 @@ export class GenreComponent {
         updateOn: "blur"
       }],
       description: ["", {
-        nonNullable: true,
         validators: [Validators.minLength(10)],
         updateOn: "blur"
       }]
@@ -77,7 +76,6 @@ export class GenreComponent {
 
   onSelectRow(data:Genre, event:any) {
     this.selection.setData(data.id);
-    console.log(data);
     this.formGroup.controls.name.setValue(data.name);
     this.formGroup.controls.description.setValue(data.description);
     document.getElementById("name")?.focus();

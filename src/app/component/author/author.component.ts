@@ -83,7 +83,6 @@ export class AuthorComponent implements AfterViewInit{
 
   onSelectRow(data:Author, event:any) {
     this.selection.setData(data.id);
-    console.log(data);
     this.formGroup.controls.fullname.setValue(data.fullname);
     this.formGroup.controls.country.setValue(data.country);
     document.getElementById("fullname")?.focus();

@@ -117,7 +117,6 @@ export class BookComponent {
 
   onTableFilter(event:any) {
     const filterValue = (event.target as HTMLInputElement).value;
-    console.log(filterValue);
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }

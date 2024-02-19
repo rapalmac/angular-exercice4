@@ -17,7 +17,7 @@ import { passwordValidator } from '../../../shared/validator/validators';
 })
 export class LoginComponent implements OnInit, OnDestroy {
   formGroup:any;
-  userService = inject(UserService);
+userService = inject(UserService);
   router = inject(Router);  
   snackBar = inject(MatSnackBar);
   subcription!:Subscription;
@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       }],
       password: ["", {
         nonNullable: true,
-        validators: [Validators.required, Validators.minLength(4), passwordValidator],
+        validators: [Validators.required, Validators.minLength(6), passwordValidator],
         updateOn: "blur"
       }]
     });

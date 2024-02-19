@@ -18,8 +18,8 @@
         </mat-form-field>
 
         <div class="fx-row fx-right">
-            <button mat-raised-button color="primary" type="submit" *ngIf="!selection.isSelected()" [disabled]="!formGroup.valid">Save</button>
-            <button mat-raised-button color="accent" type="submit" *ngIf="selection.isSelected()" [disabled]="!formGroup.valid">Update</button>
+            <button mat-raised-button id="saveBtn" color="primary" type="submit" *ngIf="!selection.isSelected()" [disabled]="!formGroup.valid">Save</button>
+            <button mat-raised-button id="updateBtn" color="accent" type="submit" *ngIf="selection.isSelected()" [disabled]="!formGroup.valid">Update</button>
             <button mat-raised-button type="reset" (click)="resetForm()">Reset</button>
         </div>
     </form>

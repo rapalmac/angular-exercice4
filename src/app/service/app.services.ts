@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Subject, catchError } from "rxjs";
+import { Subject } from "rxjs";
 import { Author, Book, Genre, User } from "../model/model";
 import { HttpService } from "./http.service";
 
@@ -55,11 +55,7 @@ export class UserService extends HttpService<User> {
     authenticate(user:User) {
         this.filter({
             email: user.email
-        }).pipe(
-            catchError(error => {
-                throw new Error("Unable to login, try again later.");
-            })
-        ).subscribe(data => {
+        }).subscribe(data => {
             if (data && data.length > 0) {
                 let _user = data[0] as User;
 
