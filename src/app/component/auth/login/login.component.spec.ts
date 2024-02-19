@@ -1,6 +1,6 @@
 import { HttpClientTestingModule } from "@angular/common/http/testing";
 import { DebugElement } from "@angular/core";
-import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
 import { FormGroup } from "@angular/forms";
 import { By } from "@angular/platform-browser";
 import { provideAnimationsAsync } from "@angular/platform-browser/animations/async";
@@ -19,19 +19,19 @@ describe("LoginComponent", () => {
         fixture.detectChanges();
     }
 
-    beforeEach(async () => {
-        await TestBed.configureTestingModule({
+    beforeEach(waitForAsync (() => {
+        TestBed.configureTestingModule({
             imports: [ HttpClientTestingModule ],
             providers: [
                 provideAnimationsAsync()
             ]
-        }).compileComponents();
-
-        fixture = TestBed.createComponent(LoginComponent);
-        component = fixture.componentInstance;
-        el = fixture.debugElement;
-        service = TestBed.inject(UserService);
-    });
+        }).compileComponents().then(() => {
+            fixture = TestBed.createComponent(LoginComponent);
+            component = fixture.componentInstance;
+            el = fixture.debugElement;
+            service = TestBed.inject(UserService);
+        })
+    }));
 
     beforeEach(() => {
         expect(component).toBeTruthy();
